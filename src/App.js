@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-class App extends Component {
+import Intellicense from './Intellicense'
+
+
+const items=[
+  {
+    name: 'item 1',
+    value: 'item 1'
+  },
+  {
+    name: 'Sound',
+    value: 'Sound'
+  },
+  {
+    name: 'Sound item',
+    value: 'Sound item'
+  }
+]
+
+class Auto extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Intellicense items={items}/>
     );
   }
 }
 
-export default App;
+export default Auto;
